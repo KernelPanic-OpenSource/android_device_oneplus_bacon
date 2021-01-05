@@ -237,4 +237,4 @@ MR_REC_VERSION := $(shell date -u +%Y%m%d)-01
 MR_POPULATE_BY_NAME_PATH := "/dev/block/platform/msm_sdcc.1/by-name"
 
 # Inherit from the proprietary version
-include vendor/oneplus/bacon/BoardConfigVendor.mk
+# include vendor/oneplus/bacon/BoardConfigVendor.mk
