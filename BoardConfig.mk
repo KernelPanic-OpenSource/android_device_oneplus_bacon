@@ -153,7 +153,7 @@ TARGET_RIL_VARIANT := caf
 # Recovery
 # TARGET_RECOVERY_FSTAB := device/oneplus/bacon/rootdir/etc/fstab.bacon
 # TARGET_RECOVERY_FSTAB := device/oneplus/bacon/recovery/root/etc/recovery.fstab
-TARGET_RECOVERY_FSTAB := device/oneplus/bacon/multirom/mrom.fstab
+# TARGET_RECOVERY_FSTAB := device/oneplus/bacon/multirom/mrom.fstab
 
 # RPC
 TARGET_NO_RPC := true
