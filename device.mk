@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/oneplus/A0001
+LOCAL_PATH := device/oneplus/bacon
 

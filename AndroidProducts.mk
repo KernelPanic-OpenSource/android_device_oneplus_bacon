@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_A0001.mk
+     $(LOCAL_DIR)/omni_bacon.mk

@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/oneplus/A0001
+DEVICE_PATH := device/oneplus/bacon
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -29,7 +29,7 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := generic
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := A0001
+TARGET_OTA_ASSERT_DEVICE := A0001,bacon
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -55,8 +55,8 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := zImage
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
-TARGET_KERNEL_SOURCE := kernel/oneplus/A0001
-TARGET_KERNEL_CONFIG := A0001_defconfig
+TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
+TARGET_KERNEL_CONFIG := lineageos_bacon_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8974
