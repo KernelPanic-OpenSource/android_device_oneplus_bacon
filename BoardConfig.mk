@@ -151,7 +151,9 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_RIL_VARIANT := caf
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/multirom/mrom.fstab
+# TARGET_RECOVERY_FSTAB := device/oneplus/bacon/rootdir/etc/fstab.bacon
+# TARGET_RECOVERY_FSTAB := device/oneplus/bacon/recovery/root/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/oneplus/bacon/multirom/mrom.fstab
 
 # RPC
 TARGET_NO_RPC := true
@@ -193,7 +195,6 @@ TW_INCLUDE_CRYPTO := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
-TARGET_USERIMAGES_USE_F2FS := true
 TARGET_HW_DISK_ENCRYPTION := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 255
@@ -232,6 +233,8 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 include $(PLATFORM_PATH)/multirom/MR_REC_VERSION.mk
 BOARD_MKBOOTIMG_ARGS += --board mrom$(MR_REC_VERSION)
 MR_REC_VERSION := $(shell date -u +%Y%m%d)-01
+# from the emmc
+MR_POPULATE_BY_NAME_PATH := "/dev/block/platform/msm_sdcc.1/by-name"
 
 # Inherit from the proprietary version
 include vendor/oneplus/bacon/BoardConfigVendor.mk
