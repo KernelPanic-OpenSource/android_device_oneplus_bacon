@@ -56,7 +56,7 @@ BOARD_KERNEL_IMAGE_NAME := zImage
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
-TARGET_KERNEL_CONFIG := lineageos_bacon_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_bacon_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8974
