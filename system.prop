@@ -14,6 +14,11 @@ ro.bluetooth.sap=false
 # CABL
 ro.qualcomm.cabl=0
 
+# Devices
+ro.build.product=bacon
+ro.product.device=bacon
+ro.build.description=OnePlus
+
 # Camera
 camera2.portability.force_api=1
 media.stagefright.legacyencoder=true
