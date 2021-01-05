@@ -198,7 +198,8 @@ TWHAVE_SELINUX := true
 
 # MultiROM config. MultiROM also uses parts of TWRP config
 TARGET_RECOVERY_IS_MULTIROM := true
-MR_ALLOW_NKK71_NOKEXEC_WORKAROUND := true
+# MR_ALLOW_NKK71_NOKEXEC_WORKAROUND := true
+MR_NO_KEXEC := enabled
 MR_CONTINUOUS_FB_UPDATE := true
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := $(PLATFORM_PATH)/multirom/mr_init_devices.c
@@ -215,8 +216,8 @@ MR_QCOM_OVERLAY_HEADER := $(PLATFORM_PATH)/multirom/mr_qcom_overlay.h
 MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
 MR_QCOM_OVERLAY_HEAP_ID_MASK := 2
 MR_INFOS := $(PLATFORM_PATH)/multirom/mrom_infos
-MR_DEVICE_SPECIFIC_VERSION := bacon
-MR_DEVICE_VARIANTS := bacon A0001 onyx oneplus OnePlus E1003 ONE
+MR_DEVICE_SPECIFIC_VERSION := nsd
+MR_DEVICE_VARIANTS := bacon A0001 oneplus OnePlus ONE
 
 # Inherit from the proprietary version
 include vendor/oneplus/bacon/BoardConfigVendor.mk
