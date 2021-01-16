@@ -20,8 +20,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bacon device
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit fonts
+$(call inherit-product-if-exists, frameworks/base/data/fonts/fonts.mk)
+
+# Inherit some common Halium stuff.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/halium.mk)
 
 PRODUCT_NAME := lineage_bacon
 PRODUCT_DEVICE := bacon
